@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Camera Capture</title>
+  <link rel="stylesheet" href="camera.css">
+</head>
+<body>
+
+  <!-- Gallery Background -->
+  <div class="gallery-card" id="galleryCard">
+    <h3>📁 Gallery</h3>
+    <div class="gallery" id="gallery"></div>
+  </div>
+
+  <!-- Camera Center -->
+  <div class="camera-container">
+    <h2>📸 Camera Capture</h2>
+
+    <div class="camera-frame">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="captureBtn">Capture</button>
+      <button id="stopBtn">Stop</button>
+    </div>
+
+    <p id="status"></p>
+  </div>
+
+  <!-- Image Viewer -->
+  <div class="image-modal" id="imageModal">
+    <span id="closeModal">✕</span>
+    <img id="modalImage">
+  </div>
+
+  <script src="camera.js"></script>
+</body>
+</html>
